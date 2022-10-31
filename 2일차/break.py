@@ -21,7 +21,7 @@ while True:
         info={}
         info["userno"]=int(input('번호입력: ')) # **** int해야지 숫자로 인식해서 삭제됨
         info["username"]=input('이름입력: ')
-        info["salary"]=input('급여입력: ')
+        info["salary"]=int(input('급여입력: '))
 
         users.append(info)
     elif no == 2:
