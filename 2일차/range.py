@@ -27,7 +27,8 @@ for i in range(1,n+1):
         print("*",end="")
     print()
 
-output=""\
+output=""
+
 for i in range(1,n+1):
     #공백출력
     for j in range(n-i):
@@ -36,4 +37,5 @@ for i in range(1,n+1):
     for j in (range(i)):
        output+="*"
     output+='\n'
+
 print(output)
