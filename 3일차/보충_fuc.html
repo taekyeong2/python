@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function.html</title>
+</head>
+<body>
+    <input id="num">
+    <button type="button" onclick="sum(num.value)">합계</button>
+    
+    <script>
+        let total = 0 // 밖의 토탈과 함수안 토탈과 다르다.
+        function sum(n){
+            let total = 0; //지역변수
+            // total = 0; // let 빼면 함수안에서 전역변수라는 의미.
+            // debugger  // 중단점 설정
+            for(let i=0; i<=n; i++){    // let의경우 이 for 안에서만 i변수 사용. (블럭단위)
+                total += i
+            // for(var i=0; i<=n; i++){   // var는 for밖에서도 사용 가능
+            //     total += i
+            }
+            console.log(total)
+            console.log(i)
+        }
+
+    </script>
+</body>
+</html>
