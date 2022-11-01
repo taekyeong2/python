@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lambda.html</title>
+</head>
+<body>
+    <!-- https://www.w3schools.com/jsref/jsref_map.asp
+        https://www.w3schools.com/jsref/jsref_filter.asp
+         -->
+         <!-- <h1>JavaScript Arrays</h1>
+<h2>The filter() Method</h2>
+
+<p>Get every element in the array that has a value of 18 or more:</p>
+
+<p id="demo"></p>
+
+<script>
+const ages = [32, 33, 16, 40];
+
+document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+
+function checkAdult(age) {
+  return age >= 18;
+} -->
+
+<!-- =================================================================================== -->
+
+<!-- 람다식 -->
+<h1>JavaScript Arrays</h1>
+<h2>The filter() Method</h2>
+
+<p>Get every element in the array that has a value of 18 or more:</p>
+
+<p id="demo"></p>
+
+<script>
+const ages = [32, 33, 16, 40];
+
+document.getElementById("demo").innerHTML = ages.filter(x => x>30);
+// 자바스크립트에서는 람다빼고 => 로 표현 (매개변수 => 리턴값)
+</script>
+
+<!-- =================================================================================== -->
+
+<h2>JavaScript Arrays</h2>
+
+<p>The Array.map() method creates a new array from the results of calling a function for every element.</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers = [4, 9, 16, 25];
+document.getElementById("demo").innerHTML = numbers.map(x => x%5);
+</script>
+
+</body>
+</html>

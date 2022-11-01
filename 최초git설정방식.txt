@@ -1,0 +1,115 @@
+1) 최초에 처음 받을 때 
+- git clone 주소(코드 - 누르면 주소 나옴 - 깃 클론)
+깃 다운받아야함
+
+2) 두번째 받을 때 : 내일
+- git pull 
+
+3) 원숭이도 할 수 있는 깃. 
+
+
+--------------
+
+깃 폴더 만듦
+1. git init : 초기화해줌
+2. git remote add origin 주소 : 내폴더와 github repository 연결
+3. git add * 혹은 내가 원하는 파일 입력
+4. git commit -m :내가 쓰고 싶은 말
+5. error : 누가 올리는지 등록 안해서 오류남
+6. git config --global user.email/ user.name(최초 한번진행)
+7. git commit -m
+8. git branch -M main : 내가 올리는 별명 지정 ( main 이라는 별명)
+9. git push -u origin main : main이라는 브런치에 올리겠따
+10. github login , 인증
+11. 정상 업로드 완료 
+
+-------------
+두번째 업로드는 내일 
+
+1) git init : git 초기화
+2) git remote add origin 주소
+   -> 내 폴더와 github repository 연결
+3) git add * 혹은 내가 원하는 파일 입력
+4) git commit -m '내가 쓰고 싶은 말'
+5) Error -> 누가 올리는지 등록
+   - 최초 한번만 진행
+6) git config --global user.email
+7) git config --global user.name
+
+8) git commit -m '내가 쓰고 싶은 말'
+9) git branch -M main
+10) git push -u origin main
+11) github login, auth
+12) 정상 upload 완료
+
+--------------
+깃 처음 내려받을때
+깃허브 레퍼지토리에 파일이 있어야함
+
+ 깃 클론 이후 내려받을 때(파일 없을때)
+1. git clone 주소(내려받을 깃 허브 주소)
+
+미리 받아놓은 파일이 있을때 변경된것만 받고 싶을때
+git pull origin main 
+
+-------------------------
+깃 변경된거 업로드 하는법
+$ git status
+$ git add *
+$ git status
+$ git commit -m '20221025'
+$ git pull origin main - 원격저장소와 내거 내용 내거에 맞춤
+$ git push origin main
+
+** main - 핵심(최종본) - 검증다된 소스 붙이기
+  브런치 만들어서 나중에 메인에 붙이기 (작업하는 사용자이름)
+== $ git branch taetae1
+
+ git branch
+* main
+  taetae1
+
+$ git checkout taetae1
+Switched to branch 'taetae1'
+
+$ git branch
+  main
+* taetae1
+
+-----------------------------------------------------------------
+
+깃풀다운
+
+
+---------------------------------------------------------------
+깃 폴더 옮기기
+1. 업로드할 폴더의 상위 폴더로 가서 git bash 클릭! (우클릭)
+git bash here를 클릭해준다!
+
+2. 폴더 Add - Commit - Push 
+ 
+Git 오류! 
+
+fatal: not a git repository (or any of the parent directories): .git
+--> git init을 진행해주지 않아서 생기는 오류
+
+ 
+우선 git 레포지토리를 생성해준다! 
+--------------
+명령어 순서
+
+$ git remote add origin [깃헙 repository주소]
+--->
+$ git status
+
+$ git add .
+
+$ git commit -m "커밋 로그"
+
+$ git remote -v (새로다시 다 올릴때)
+
+$ git pull origin main (원격저장소와 내거 내용 내거에 맞춤 - 변경된것만 업로드)
+
+$ git push origin main
+<---
+
