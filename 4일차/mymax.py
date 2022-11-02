@@ -5,11 +5,11 @@
 
 '''
 
-from cgitb import reset
-from unittest import result
+# from cgitb import reset
+# from unittest import result
 
 
-def mymax(*nums):
+def max(*nums):
     #결과(제일큰수)를 지정할 변수에 첫번째 요소로 초기화
     max = nums[0]
     # 리스트 수만큼 반복
@@ -22,8 +22,8 @@ def mymax(*nums):
     return max
 
 
-result=mymax(3,5,10,2)
+'''result=max(3,5,10,2)
 print(result)
 
-result=mymax(100,50)
-print(result)
+result=max(100,50)
+print(result)'''
